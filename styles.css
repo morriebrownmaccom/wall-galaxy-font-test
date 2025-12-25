@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 
 :root {
-  --text: #e6e8ec;
-  --muted: #b7bbc4;
+  --text: #0e1420;
+  --muted: #424957;
   --card-bg: #e6e6e6;
   --card-text: #767676;
   --card-footer: #131313;
@@ -12,7 +12,7 @@
 
 body {
   margin: 0;
-  background: #000;
+  background: #fff;
   color: var(--text);
   font-family: "Helvetica Neue", Arial, sans-serif;
   display: flex;
@@ -36,6 +36,10 @@ p {
   align-items: center;
   gap: 24px;
   flex-wrap: wrap;
+  background: #000;
+  padding: 16px 24px;
+  margin: 0 -24px;
+  box-sizing: border-box;
 }
 
 .announcement-bar {
@@ -65,7 +69,7 @@ p {
 .new-arrivals__copy h2 {
   font-family: "Russo One", sans-serif;
   font-size: 32px;
-  color: #fff !important;
+  color: #01102a;
   text-transform: uppercase;
   letter-spacing: 0.02em;
   margin-bottom: 12px;
