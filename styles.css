@@ -64,12 +64,13 @@ p {
 
 .new-arrivals__copy h2 {
   font-family: "Russo One", sans-serif;
-  font-size: 30px;
-  color: #fff;
+  font-size: 32px;
+  color: #fff !important;
   text-transform: uppercase;
-  letter-spacing: 0;
+  letter-spacing: 0.02em;
   margin-bottom: 12px;
-  font-weight: 700;
+  font-weight: 400;
+  line-height: 1.05;
 }
 
 .new-arrivals__copy p {
