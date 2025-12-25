@@ -1,15 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 
+:root {
+  --text: #e6e8ec;
+  --muted: #b7bbc4;
+  --card-bg: #e6e6e6;
+  --card-text: #767676;
+  --card-footer: #131313;
+  --cta: #5c3ef6;
+  --cta-hover: #6c50ff;
+}
+
 body {
   margin: 0;
   background: #000;
+  color: var(--text);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 24px;
+}
+
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
 }
 
 .announcement-row {
   display: flex;
   align-items: center;
   gap: 24px;
-  padding: 16px 12px;
+  flex-wrap: wrap;
 }
 
 .announcement-bar {
@@ -25,3 +51,93 @@ body {
 .size-12 { font-size: 12pt; }
 .size-10 { font-size: 10pt; }
 .size-8 { font-size: 8pt; }
+
+.new-arrivals {
+  display: grid;
+  grid-template-columns: minmax(240px, 320px) 1fr;
+  gap: 28px;
+  align-items: start;
+  width: 100%;
+  max-width: 1300px;
+}
+
+.new-arrivals__copy h2 {
+  font-family: "Russo One", sans-serif;
+  font-size: 32px;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.new-arrivals__copy p {
+  margin-bottom: 16px;
+}
+
+.cta {
+  background: var(--cta);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.cta:hover {
+  background: var(--cta-hover);
+  transform: translateY(-1px);
+}
+
+.cta:active {
+  transform: translateY(0);
+}
+
+.new-arrivals__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.product-card__image {
+  background: var(--card-bg);
+  color: var(--card-text);
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  text-align: center;
+}
+
+.placeholder-main {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.placeholder-sub {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.product-card__footer {
+  background: var(--card-footer);
+  color: #fff;
+  text-align: center;
+  padding: 12px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .new-arrivals {
+    grid-template-columns: 1fr;
+  }
+}
