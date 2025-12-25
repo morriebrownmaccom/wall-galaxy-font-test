@@ -4,18 +4,16 @@
 :root {
   --text: #0e1420;
   --muted: #424957;
-  --card-bg: #e6e6e6;
-  --card-text: #767676;
-  --card-footer: #131313;
-  --cta: #5c3ef6;
-  --cta-hover: #6c50ff;
+  --navy: #01102a;
+  --cta: #0b1931;
+  --cta-hover: #152544;
 }
 
 body {
   margin: 0;
   background: #fff;
   color: var(--text);
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: "DM Sans", "Helvetica Neue", Arial, sans-serif;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -72,7 +70,7 @@ p {
 .new-arrivals {
   display: grid;
   grid-template-columns: minmax(240px, 320px) 1fr;
-  gap: 28px;
+  gap: 32px;
   align-items: start;
   width: 100%;
   max-width: 1300px;
@@ -82,7 +80,7 @@ p {
 .new-arrivals__copy h2 {
   font-family: "Russo One", sans-serif;
   font-size: 32px;
-  color: #01102a;
+  color: var(--navy);
   text-transform: uppercase;
   letter-spacing: 0.02em;
   margin-bottom: 12px;
@@ -91,6 +89,8 @@ p {
 }
 
 .new-arrivals__copy p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
   margin-bottom: 16px;
 }
 
@@ -99,8 +99,11 @@ p {
   color: #fff;
   border: none;
   border-radius: 0;
-  padding: 10px 18px;
-  font-weight: 700;
+  padding: 12px 22px;
+  font-weight: 800;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
   cursor: pointer;
   transition: background 0.15s ease, transform 0.15s ease;
 }
@@ -117,8 +120,9 @@ p {
 .new-arrivals__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 16px;
-  align-items: stretch;
+  gap: 32px;
+  align-items: start;
+  justify-items: center;
 }
 
 .product-card {
@@ -129,36 +133,29 @@ p {
 }
 
 .product-card__image {
-  background: var(--card-bg);
-  color: var(--card-text);
-  height: 260px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 4px;
-  text-align: center;
-  border-radius: 0;
+  position: relative;
+  width: 260px;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: #ddd;
 }
 
-.placeholder-main {
-  font-size: 28px;
-  font-weight: 800;
+.product-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.placeholder-sub {
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.product-card__footer {
-  background: var(--card-footer);
+.product-card__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--navy);
   color: #fff;
-  text-align: center;
-  padding: 12px;
-  font-size: 13px;
-  font-weight: 700;
-  border-radius: 0;
+  padding: 10px 14px;
+  font-family: "Russo One", sans-serif;
+  font-size: 16px;
+  line-height: 1;
 }
 
 @media (max-width: 900px) {
