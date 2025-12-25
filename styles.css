@@ -59,6 +59,7 @@ p {
   align-items: start;
   width: 100%;
   max-width: 1300px;
+  margin: 0 auto;
 }
 
 .new-arrivals__copy h2 {
@@ -96,6 +97,7 @@ p {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 16px;
+  align-items: stretch;
 }
 
 .product-card {
