@@ -69,6 +69,7 @@ p {
   text-transform: uppercase;
   letter-spacing: 0;
   margin-bottom: 12px;
+  font-weight: 700;
 }
 
 .new-arrivals__copy p {
@@ -119,6 +120,7 @@ p {
   justify-content: center;
   gap: 4px;
   text-align: center;
+  border-radius: 0;
 }
 
 .placeholder-main {
@@ -138,6 +140,7 @@ p {
   padding: 12px;
   font-size: 13px;
   font-weight: 700;
+  border-radius: 0;
 }
 
 @media (max-width: 900px) {
