@@ -6,7 +6,7 @@
   --muted: #424957;
   --navy: #01102a;
   --cta: #01102a;
-  --cta-hover: #0b1931;
+  --cta-hover: #01102a;
 }
 
 body {
@@ -35,7 +35,7 @@ p {
   align-items: center;
   gap: 24px;
   flex-wrap: wrap;
-  background: var(--navy);
+  background: var(--navy) !important;
   padding: 16px 24px;
   margin: 0 -24px;
   box-sizing: border-box;
@@ -57,7 +57,7 @@ p {
 .size-15 { font-size: 15px; }
 
 .announcement-row.dm {
-  background: var(--navy);
+  background: var(--navy) !important;
 }
 
 .announcement-bar.dm {
@@ -71,7 +71,7 @@ p {
   height: 134px;
   width: calc(100% + 48px);
   margin: 0 -24px;
-  background: var(--navy);
+  background: var(--navy) !important;
   position: relative;
 }
 
@@ -114,7 +114,7 @@ p {
 }
 
 .cta {
-  background: var(--cta);
+  background: var(--cta) !important;
   color: #fff;
   border: none;
   border-radius: 0;
@@ -128,7 +128,7 @@ p {
 }
 
 .cta:hover {
-  background: var(--cta-hover);
+  background: var(--cta-hover) !important;
   transform: translateY(-1px);
 }
 
