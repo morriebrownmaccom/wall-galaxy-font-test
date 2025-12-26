@@ -36,6 +36,7 @@ p {
   gap: 24px;
   flex-wrap: wrap;
   background: var(--navy) !important;
+  opacity: 0.8;
   padding: 16px 24px;
   margin: 0 -24px;
   box-sizing: border-box;
@@ -82,6 +83,7 @@ p {
   width: calc(100% + 48px);
   margin: 0 -24px;
   background: var(--navy) !important;
+  opacity: 0.5;
   position: relative;
 }
 
