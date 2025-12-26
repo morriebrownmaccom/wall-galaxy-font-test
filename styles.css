@@ -128,7 +128,7 @@ p {
 }
 
 .cta:hover {
-  background: var(--cta-hover) !important;
+  background: #5b48af !important;
   transform: translateY(-1px);
 }
 
