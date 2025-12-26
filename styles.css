@@ -60,13 +60,13 @@ p {
   background: var(--navy) !important;
 }
 
-.announcement-row.copy {
+.announcement-row.top {
   height: 38px;
   padding: 0 24px;
   gap: 16px;
 }
 
-.announcement-row.dm.spaced {
+.announcement-row.copy.spaced {
   margin-top: 100px;
 }
 
