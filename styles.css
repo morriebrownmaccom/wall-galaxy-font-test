@@ -5,8 +5,8 @@
   --text: #0e1420;
   --muted: #424957;
   --navy: #01102a;
-  --cta: #0b1931;
-  --cta-hover: #152544;
+  --cta: #01102a;
+  --cta-hover: #0b1931;
 }
 
 body {
@@ -35,7 +35,7 @@ p {
   align-items: center;
   gap: 24px;
   flex-wrap: wrap;
-  background: #000;
+  background: var(--navy);
   padding: 16px 24px;
   margin: 0 -24px;
   box-sizing: border-box;
@@ -57,7 +57,7 @@ p {
 .size-15 { font-size: 15px; }
 
 .announcement-row.dm {
-  background: #000;
+  background: var(--navy);
 }
 
 .announcement-bar.dm {
