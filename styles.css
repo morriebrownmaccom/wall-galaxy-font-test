@@ -60,7 +60,7 @@ p {
   background: var(--navy) !important;
 }
 
-.announcement-row.top {
+.announcement-row.copy {
   height: 38px;
   padding: 0 24px;
   gap: 16px;
