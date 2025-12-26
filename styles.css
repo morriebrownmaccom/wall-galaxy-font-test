@@ -60,6 +60,10 @@ p {
   background: var(--navy) !important;
 }
 
+.announcement-row.dm.spaced {
+  margin-top: 100px;
+}
+
 .announcement-bar.dm {
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
