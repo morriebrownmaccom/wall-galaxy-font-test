@@ -60,6 +60,12 @@ p {
   background: var(--navy) !important;
 }
 
+.announcement-row.top {
+  height: 38px;
+  padding: 0 24px;
+  gap: 16px;
+}
+
 .announcement-row.dm.spaced {
   margin-top: 100px;
 }
